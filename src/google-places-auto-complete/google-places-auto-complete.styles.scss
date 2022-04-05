@@ -1,0 +1,41 @@
+.google-map-container-div{
+  height: fit-content;
+  margin-bottom: 1em;
+
+
+}
+.type-address-input{
+  height: 2em;
+  margin: .5em 0;
+  width:  100%;
+}
+.address-display-google{
+  text-align: center;
+  margin: 2em  auto;
+  //background-color: rgba(49, 182, 35, 0.5);
+  width: fit-content;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: solid thick #63bfff;
+  width: 90%;
+  //color: white;
+}
+
+.address-title-text{
+  margin: 1em ;
+  text-align: center;
+
+}
+.google-places-autocomplete-container-div{
+  margin: 0;
+  width: 100%;
+
+  padding: 0;
+  //background-color: rgba(0, 0, 0, 0.27);
+  //border: solid thin;
+}
+div{
+  padding: 0;
+  margin: 0;
+}

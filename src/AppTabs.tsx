@@ -4,10 +4,13 @@ import React, {useEffect, useState} from 'react';
 import HomePage from "./pages/HomePage";
 import SettingsPage from "./pages/SettingsPage";
 import {useHistory, Route, Redirect } from "react-router-dom"
-import {home as homeIcon, settings as settingsIcon } from "ionicons/icons"
+import { accessibilityOutline as profileIcon,home as homeIcon, settings as settingsIcon, flagOutline} from "ionicons/icons"
 import EntryPage from "./pages/EntryPage";
 import {useAuth} from "./auth";
 import AddEntryPage from "./pages/AddEntryPage";
+import AddChallengePage from "./pages/AddChallengePage";
+import MyChallengesPage from "./pages/MyChallengesPage";
+import ChallengePage from "./pages/ChallengePage";
 
 
 
@@ -42,9 +45,18 @@ const AppTabs: React.FC = () => {
                     <Route exact path="/my/entries/add">
                         <AddEntryPage/>
                     </Route>
+                    <Route exact path="/my/challenges">
+                        <MyChallengesPage/>
+                    </Route>
+                    <Route exact path="/my/challenges/add">
+                        <AddChallengePage/>
+                    </Route>
 
                     <Route exact path="/my/entries/view/:id">
                         <EntryPage />
+                    </Route>
+                    <Route exact path="/my/challenges/view/:id">
+                        <ChallengePage />
                     </Route>
 
 
@@ -54,8 +66,14 @@ const AppTabs: React.FC = () => {
 
                     <IonTabButton tab="home" href="/my/entries">
 
-                        <IonIcon icon={homeIcon}/>
+                        <IonIcon icon={profileIcon}/>
                         <IonLabel>Home</IonLabel>
+
+                    </IonTabButton>
+                    <IonTabButton tab="challenges" href="/my/challenges">
+
+                        <IonIcon icon={flagOutline}/>
+                        <IonLabel>Challenges</IonLabel>
 
                     </IonTabButton>
 

@@ -1,0 +1,48 @@
+.submission-icon-and-earnings-container{
+  //background-color: grey;
+  //padding: .1em .5em;
+  padding: .4em .2em;
+
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  min-width: 2.5em;
+
+  margin-left: 0;
+  z-index: 10;
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+}
+.info-icon{
+  //background-color: grey;
+  //padding: .1em .5em;
+  //padding: .4em .2em;
+
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  min-width: 2.5em;
+
+  margin-left: 0;
+  z-index: 10;
+
+  //border: 1px solid rgba(0, 0, 0, 0.4);
+
+}
+
+.challenge-title-container{
+  border: solid thin;
+  width: 80vw;
+  margin-right: auto;
+  //display: flex;
+  border-radius: 10px;
+  margin-top: .5em;
+}
+.my-challenges-list{
+  //background-color: #2fdf75;
+  overflow-y: scroll;
+  height: 80%;
+  width: 90%;
+  margin:  3em auto 0;
+}

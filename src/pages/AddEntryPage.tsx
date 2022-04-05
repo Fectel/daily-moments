@@ -63,7 +63,9 @@ const AddEntryPage: React.FC = () => {
         if(pictureUrl.startsWith('blob:')){
             entryData.pictureUrl = await savePicture(pictureUrl, userId)
         }
-        const entryRef = await entriesRef.add(entryData);
+        const entryRef = await entriesRef.add(entryData)
+
+
         console.log('saved', entryRef.id);
         history.goBack();
     }
