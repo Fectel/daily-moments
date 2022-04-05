@@ -1,0 +1,67 @@
+.time-of-day-choice-container{
+  //background-color: brown;
+  width: 6em;
+  //background-color: brown;
+  height: 4em;
+  text-align: center;
+  margin-right: .4em;
+  font-size: .7rem;
+  border-radius: 4px;
+  box-shadow: .1px .5px 2px .01px;
+
+  cursor: pointer;
+  height: 6em;
+  margin: .4em 0;
+  &:hover{
+    background-color: #7196F333;
+  }
+}
+.time-of-day-choice-time-interval-title{
+  //background-color: #61dafb;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+.time-of-day-choices-container-div{
+  display: flex;
+  //background-color: #FFD454;
+  width: 100%;
+  margin: 1em auto;
+  justify-content: space-evenly;
+}
+.time-of-day-choice-time-title{
+  font-size: .9rem;
+}
+.time-start-containers-div{
+  width: 100%;
+  padding: .4em;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  box-shadow: .1px .5px 2px .01px;
+
+  height: 6em;
+  overflow-x: auto;
+}
+.time-of-day-choices-title{
+  display: flex;
+  width: fit-content;
+  font-size: 1.3rem;
+  margin: auto;
+}
+.time-of-day-choices-page-container-div{
+  width: 100%;
+  margin-bottom: 0;
+}
+.render-correct-start-times-div{
+  border: solid thin;
+  width: 80%;
+  margin: auto;
+
+}
+.time-of-day-and-start-times-container-div{
+  display: flex;
+  flex-flow: column;
+  //background-color: #490411;
+  //background-color: #490411;
+}
